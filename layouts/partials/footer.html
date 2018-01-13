@@ -5,7 +5,7 @@
       <div class="col-sm-8">{{ readFile "/content/_footer-right.md" | markdownify }}</div>
     </div>
     <div class="row">
-      <div id="footer-legal" class="col-12">
+      <div id="footer-social" class="col-12">
         <a href="mailto:{{ .Site.Params.groupinfo.contactEmail }}"><i class="fas fa-envelope-square fa-3x"></i></a>
         {{ if isset .Site.Params.urls "facebookurl" }}
           <a href="{{ .Site.Params.urls.FacebookUrl }}"><i class="fab fa-facebook-square fa-3x"></i></a>
