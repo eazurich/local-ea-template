@@ -1,34 +1,36 @@
 {{ partial "header.html" . }}
 
-<div class="container-fluid no-gutter">
-  <div id="top-banner" class="row banner-section" style="background-image:url('{{ .Site.BaseURL}}/img/contact-banner.jpg')">
-    <div class="all-center"><span class="banner-section-text">{{ .Site.Params.pages.contactPageHeader }}</span></div>
+<main>
+  <div class="container-fluid no-gutter">
+    <div id="top-banner" class="row banner-section" style="background-image:url('{{ .Site.BaseURL}}/img/contact-banner.jpg')  ">
+      <div class="all-center"><span class="banner-section-text">{{ .Site.Params.pages.contactPageHeader }}</span></div>
+    </div>
   </div>
-</div>
-
-<section class="text-center">
-  <div class="container banner-section text-banner">
-      <p class="lead">{{ .Site.Params.contactform.leadText }}</p>
-
-      <container>
-          <form action="https://formspree.io/{{ .Site.Params.groupinfo.contactEmail }}"
-                method="POST">
-              <label for="name">{{ .Site.Params.contactform.senderName }}:</label>
-              <input type="text" name="name" id="name">
-
-              <label for="email">{{ .Site.Params.contactform.senderEmail }}:</label>
-              <input type="email" name="_replyto" id="email">
-
-              <label for="subject">{{ .Site.Params.contactform.emailSubject }}:</label>
-              <input type="text" name="_subject" id="subject">
-
-              <label for="message">{{ .Site.Params.contactform.emailMessage }}:</label>
-              <textarea rows=10 columns=30 name="_message" id="message"></textarea>
-
-              <input type="submit" class="btn btn-default" value="{{ .Site.Params.contactform.send }}">
-          </form>
-      </container>
-  </div>
-</section>
+  
+  <section class="text-center">
+    <div class="container banner-section text-banner">
+        <p class="lead">{{ .Site.Params.contactform.leadText }}</p>
+  
+        <container>
+            <form action="https://formspree.io/{{ .Site.Params.groupinfo.contactEmail }}"
+                  method="POST">
+                <label for="name">{{ .Site.Params.contactform.senderName }}:</label>
+                <input type="text" name="name" id="name">
+  
+                <label for="email">{{ .Site.Params.contactform.senderEmail }}:</label>
+                <input type="email" name="_replyto" id="email">
+  
+                <label for="subject">{{ .Site.Params.contactform.emailSubject }}:</label>
+                <input type="text" name="_subject" id="subject">
+  
+                <label for="message">{{ .Site.Params.contactform.emailMessage }}:</label>
+                <textarea rows=10 columns=30 name="_message" id="message"></textarea>
+  
+                <input type="submit" class="btn btn-default" value="{{ .Site.Params.contactform.send }}">
+            </form>
+        </container>
+    </div>
+  </section>
+</main>
 
 {{ partial "footer.html" . }}

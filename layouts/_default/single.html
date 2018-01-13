@@ -1,7 +1,9 @@
 {{ partial "header.html" . }}
 
-<div class="container regular-page-container">
-      {{ .Content | markdownify }}
-</div>
+<main>
+  <div class="container regular-page-container">
+    {{ .Content | markdownify }}
+  </div>
+</main>
 
 {{ partial "footer.html" . }}
