@@ -8,9 +8,9 @@ textarea {
     margin-right: auto;
 }
 
-/*p {
-  line-height: 0.5em;
-}*/
+p.lead {
+  margin-top: 1rem;
+}
 
 .lead, div, p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Libre Franklin', sans-serif;
@@ -32,8 +32,6 @@ textarea {
   min-height: 350px;
   position: relative;
   max-width: 100%;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
   color: white;
   text-shadow: 0 0 8px #000;
   background-size: cover;
@@ -76,7 +74,7 @@ textarea {
 }
 
 #footer-legal {
-  padding-top: 3em;
+  padding-top: 4em;
 }
 
 ul.nav {
