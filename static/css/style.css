@@ -100,11 +100,6 @@ ul.navbar-nav.mr-auto > li:not(:last-child), ul.navbar-nav.mr-auto > div {
     text-decoration: none;
 }
 
-label {
-  display: block;
-  margin-top: 1.5rem;
-}
-
 input[type=submit] {
   margin-top: 2rem;
 }
@@ -116,4 +111,12 @@ footer {
 
 footer a, footer a:hover {
   color: white;
+}
+
+@media (min-width: 1200px) {
+  .form-group {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
