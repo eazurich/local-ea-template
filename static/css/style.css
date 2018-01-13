@@ -76,9 +76,7 @@ textarea {
 }
 
 #footer-legal {
-  padding-top: 1em;
-  font-size: 0.75em;
-  line-height: 0.5em;
+  padding-top: 3em;
 }
 
 ul.nav {
@@ -113,3 +111,11 @@ input[type=submit] {
   margin-top: 2rem;
 }
 
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer a, footer a:hover {
+  color: white;
+}
