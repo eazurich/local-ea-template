@@ -146,6 +146,10 @@ footer a, footer a:hover {
   padding-top: 0;
 }
 
+.card-body p:last-child {
+  margin-bottom: 0;
+}
+
 [data-toggle=collapse] h5::before {
   position: relative;
   bottom: 4px;
