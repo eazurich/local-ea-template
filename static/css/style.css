@@ -159,5 +159,5 @@ footer a, footer a:hover {
 }
 
 [data-toggle=collapse].collapsed h5::before {
-    content: "\f067";
+  content: "\f067";
 }
