@@ -134,6 +134,10 @@ footer a, footer a:hover {
   color: inherit;
 }
 
+#accordion {
+  margin-top: 2rem;
+}
+
 .card-header a:hover {
   text-decoration: none;
 }
