@@ -147,15 +147,15 @@ footer a, footer a:hover {
 }
 
 [data-toggle=collapse] h5::before {
-  content: "\f068";
-  font-weight: 400;
-  font-family: "Font Awesome 5 Free";
   margin-right: 0.5em;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f068";
 }
 
 [data-toggle=collapse].collapsed h5::before {
