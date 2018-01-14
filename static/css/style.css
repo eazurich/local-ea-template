@@ -130,6 +130,14 @@ footer a, footer a:hover {
   border-bottom: 0;
 }
 
+.card-header a {
+  color: inherit;
+}
+
+.card-header a:hover {
+  text-decoration: none;
+}
+
 .card-body {
   padding-top: 0;
 }
