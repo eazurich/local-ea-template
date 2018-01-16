@@ -2,8 +2,21 @@
   <div class="container text-banner">
     <div class="row">
       <div class="col-sm-4">{{ readFile "/content/_footer-left.md" | markdownify }}</div>
-      <div class="col-sm-4">{{ readFile "/content/_footer-center.md" | markdownify }}</div>
       <div class="col-sm-4">{{ readFile "/content/_footer-right.md" | markdownify }}</div>
+      <div class="col-sm-4">
+        <h4>Community</h4>
+        <ul>
+          {{ if isset .Site.Params.urls "facebookurl" }}
+            <li><a href="{{ .Site.Params.urls.FacebookUrl }}"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          {{ end }}
+          {{ if isset .Site.Params.urls "twitterurl" }}
+            <li><a href="{{ .Site.Params.urls.TwitterUrl }}"><i class="fab fa-twitter"></i> Twitter</a></li>
+          {{ end }}
+          {{ if isset .Site.Params.urls "meetupurl" }}
+            <li><a href="{{ .Site.Params.urls.MeetupUrl }}"><i class="fab fa-meetup"></i> Meetup</a></li>
+          {{ end }}
+        </ul>
+      </div>
     </div>
     <!-- <div class="row">
       <div id="footer-social" class="col-12">
