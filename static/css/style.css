@@ -73,12 +73,13 @@ p.lead {
   height: 220px;
 }
 
-#footer-social {
+/*#footer-social {
   padding-top: 3em;
-}
+}*/
 
 #footer-legal {
   padding-top: 4em;
+  text-align: center;
 }
 
 ul.nav {
