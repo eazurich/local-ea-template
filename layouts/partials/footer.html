@@ -3,9 +3,9 @@
     <div class="row">
       <div class="col-sm-4">{{ readFile "/content/_footer-left.md" | markdownify }}</div>
       <div class="col-sm-4">{{ readFile "/content/_footer-center.md" | markdownify }}</div>
-      <div class="col-sm-4">
+      <div class="col-sm-4" id="footer-social">
         <h4>Community</h4>
-        <ul id="footer-social">
+        <ul>
           {{ if isset .Site.Params.urls "facebookurl" }}
             <li><a href="{{ .Site.Params.urls.FacebookUrl }}"><i class="fab fa-facebook-square"></i> Facebook</a></li>
           {{ end }}
