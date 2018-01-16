@@ -81,6 +81,11 @@ p.lead {
   list-style-type: none;
 }
 
+#footer-social ul i {
+  margin-left: -15px;
+  margin-right: 5px;
+}
+
 #footer-legal {
   padding-top: 4em;
   text-align: center;
