@@ -77,6 +77,10 @@ p.lead {
   padding-top: 3em;
 }*/
 
+#footer-social ul {
+  list-style-type: none;
+}
+
 #footer-legal {
   padding-top: 4em;
   text-align: center;
