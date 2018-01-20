@@ -1,19 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title> {{ .Site.Title }}</title>
-    <!-- Required meta tags -->
+    <title>{{ .Site.Title }}</title>
+    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:image" content="{{ .Site.BaseURL }}img/ea_logo.png">
+    <meta property="og:title" content="{{ .Site.Title }}">
+    <meta property="og:description" content="Effective altruism is a philosophy and social movement that applies evidence and reason to determine the most effective ways to improve the world.">
 
-    <!-- Font Awesome -->
+    <!-- Fonts -->
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400" rel="stylesheet">
   </head>
   <body>
 
